@@ -352,13 +352,15 @@ namespace SystemMonitor.NET
         {
             //Abort all threads
             backgroundWorker1.CancelAsync();
-            Process.GetCurrentProcess().Kill();
+            //Process.GetCurrentProcess().Kill();
+            Application.Exit();
         }
         private void Form_Closing (object sender, FormClosingEventArgs e)
         {
             //Abort all threads
             backgroundWorker1.CancelAsync();
-            Process.GetCurrentProcess().Kill();
+            //Process.GetCurrentProcess().Kill();
+            Application.Exit();
         }
 
 
